@@ -1,6 +1,6 @@
-import { ShoppingCart } from '../modules/shopping-cart';
+import { ShoppingCart } from './../modules/shopping-cart';
 import { ShoppingCartService } from './../shopping-cart.service';
-import { Product } from '../modules/product';
+import { Product } from './../modules/product';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({

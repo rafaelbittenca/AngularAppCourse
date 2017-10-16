@@ -26,7 +26,7 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { CheckOutComponent } from './check-out/check-out.component';
-import { OrderSucessComponent } from './order-sucess/order-sucess.component';
+import { OrderSuccessComponent } from './order-sucess/order-success.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
 import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
 import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
@@ -36,6 +36,8 @@ import { ProductFormComponent } from './admin/product-form/product-form.componen
 import { ProductFilterComponent } from './products/product-filter/product-filter.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { ProductQuantityComponent } from './product-quantity/product-quantity.component';
+import { ShippingFormComponent } from './shipping-form/shipping-form.component';
+import { ShoppingCartSummaryComponent } from './shopping-cart-summary/shopping-cart-summary.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,7 @@ import { ProductQuantityComponent } from './product-quantity/product-quantity.co
     ProductsComponent,
     ShoppingCartComponent,
     CheckOutComponent,
-    OrderSucessComponent,
+    OrderSuccessComponent,
     MyOrdersComponent,
     AdminProductsComponent,
     AdminOrdersComponent,
@@ -53,7 +55,9 @@ import { ProductQuantityComponent } from './product-quantity/product-quantity.co
     ProductFormComponent,
     ProductFilterComponent,
     ProductCardComponent,
-    ProductQuantityComponent
+    ProductQuantityComponent,
+    ShippingFormComponent,
+    ShoppingCartSummaryComponent
   ],
   imports: [
     BrowserModule,
@@ -72,7 +76,7 @@ import { ProductQuantityComponent } from './product-quantity/product-quantity.co
       { path: 'login', component: LoginComponent },
 
       { path: 'check-out', component: CheckOutComponent, canActivate: [AuthGuarde] },
-      { path: 'order-success', component: OrderSucessComponent, canActivate: [AuthGuarde] },
+      { path: 'order-success', component: OrderSuccessComponent, canActivate: [AuthGuarde] },
       { path: 'my/orders', component: MyOrdersComponent, canActivate: [AuthGuarde] },
 
       { 
